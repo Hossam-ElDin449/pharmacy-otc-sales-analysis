@@ -86,14 +86,29 @@ DIVIDE(SUM('Sales'[Amount ($)]), SELECTEDVALUE('BranchDemographics'[Total Health
 ## 🔍 Key Findings
 
 <!-- Replace placeholders below with your actual results once your EDA/dashboard is finalized -->
-- Branch(es) **[BR-05/06/07]** show a disproportionate share of Antiseptic Cream sales, confirming the category-branch concentration hypothesis.
-- Revenue-per-capita ranking **[differs / does not differ]** meaningfully from raw revenue ranking — branch **[X]** looks strong on raw totals but weaker once adjusted for local population.
-- Correlation between median income and branch revenue: **[coefficient]** — [interpretation, noting the small sample size of 7 branches].
-- Sales rep workload is **[even / concentrated]** across branches and categories.
-- Monthly revenue trend shows **[pattern]**; note that a portion of this dataset uses randomly generated dates, so any "seasonality" here is descriptive, not a confirmed real-world pattern.
-- Payment method **[does / does not]** show a meaningful difference in average order value.
-
+📌 Key Findings
+1. Raw revenue hides true branch performance
+ Westfield ($71K) and Northside ($68K) lead in raw sales, but neither tops the per-capita or per-healthcare-center rankings. Eastgate Pharmacy ($2.40 revenue/capita, $11K+ revenue/healthcare center) and Skinhealth Pharmacy ($2.20/capita, $8K/healthcare center) are the true efficiency leaders — they extract far more value per resident and per competing healthcare facility despite smaller raw totals.
+2. Westfield is underperforming for its market size
+ Westfield serves the largest population (96,000) but ranks near the bottom on revenue-per-capita ($0.70). This suggests untapped demand rather than a saturated market.
+3. Category mix is fairly balanced, with Digestive Enzyme leading
+ Categories range narrowly from 12.4%–16.4% of revenue, with Digestive Enzyme (16.4%) as the top performer and Allergy Pills (12.4%) the lowest. As designed, Antiseptic Cream sales concentrate heavily at Dermacare, Skinhealth, and MedTopical — confirming these branches' dermatology-focused customer base.
+4. Higher local income does not predict higher sales
+ The income-vs-revenue scatter shows a downward trend — branches in higher-income areas (e.g., Skinhealth in Gold Coast, $121K median income) don't necessarily out-sell branches in lower-income areas. Caveat: this is based on only 7 branches, so treat it as directional, not statistically confirmed.
+5. Sales rep performance is evenly distributed
+ Top reps (Ethan Ross, Olivia Grant, Grace Mitchell, Sophia Brooks) cluster within a $3-4K revenue band of each other, with average order values all in the $132–$145 range. No single rep is over- or under-utilized.
+6. No confirmed seasonality in 2022 revenue
+ Monthly trends across categories fluctuate without a consistent recurring pattern. This may reflect genuine demand variability, but part of the underlying dataset was generated with randomized dates, so any apparent "seasonality" should not be treated as a confirmed real-world pattern.
 ---
+✅ Recommendations
+1. Reallocate marketing/inventory investment toward Eastgate and Skinhealth — their high per-capita and per-healthcare-center efficiency suggests room to scale without market saturation risk.
+2. Investigate Westfield's underperformance — audit local competition, product awareness, and pricing fit for its lower-income demographic ($39,400 median income) before assuming the market is simply weak.
+3. Maintain current dermatology-focused inventory strategy at Dermacare/Skinhealth/MedTopical — the Antiseptic Cream concentration validates the branch specialization approach.
+4. Treat the income-revenue relationship as a hypothesis, not a conclusion — expand analysis with a larger branch sample or transaction-level income data before adjusting strategy based on this alone.
+5. No immediate sales rep reassignment needed — performance is balanced; continue monitoring quarterly rather than reacting to this single snapshot.
+6. Collect real transaction timestamps in future data to properly test for seasonal demand (e.g., cold/flu season stocking) — this year's data isn't reliable for that decision yet.
+
+
 
 ## 📌 About This Project
 
