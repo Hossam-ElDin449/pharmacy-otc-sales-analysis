@@ -73,13 +73,13 @@ DIVIDE(SUM('Sales'[Amount ($)]), SELECTEDVALUE('BranchDemographics'[Total Health
 ## 🖥️ Dashboard Preview
 
 <!-- Replace these with your actual screenshots once exported -->
-| Overview | Branch Performance |
-|---|---|
-| Category Analysis | Recommendations|
-|---|---|
+| EDA | Branch Performance |
+|<img width="2875" height="1620" alt="EDA page" src="https://github.com/user-attachments/assets/a6a25a86-b703-444d-a96d-d7417c90d4af" />|<img width="3295" height="1840" alt="Branches analysis" src="https://github.com/user-attachments/assets/daab4c6e-23f1-4d5f-8da0-5bed83fc7682" />|
+| Category Analysis | |
+|<img width="2875" height="1615" alt="Category analysis page" src="https://github.com/user-attachments/assets/68d5f15c-7312-4311-88f7-91455b529c61" />| |
 
 
-🎥 **Video walkthrough:** [Link to Loom/YouTube recording] *(add once recorded)*
+🎥 **Video walkthrough:** https://youtu.be/-jATwC5oQt8
 
 ---
 
